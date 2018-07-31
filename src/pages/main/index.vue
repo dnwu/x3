@@ -1,15 +1,55 @@
 <template>
-    <div>
-        <router-view></router-view>
+    <div class="main">
+        <aside>
+            <NavLeft/>
+        </aside>
+        <div>
+            <header>
+                <MHeader/>
+            </header>
+            <main>
+                <router-view/>
+            </main>
+        </div>
     </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+import NavLeft from "@/components/NavLeft";
+import MHeader from "@/components/Header";
+export default {
+  components: { NavLeft, MHeader },
+  data() {
+    return {
+      key: "value"
+    };
+  }
+};
 </script>
 
-<style scoped>
-
+<style lang='less' scoped>
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  aside {
+    width: 256px;
+    height: 100%;
+    background-color: #3a3f44;
+    overflow: auto;
+  }
+  > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    header {
+      height: 64px;
+      background-color: #fff;
+    }
+    main {
+      flex: 1;
+      background-color: #F0F2F5;
+    }
+  }
+}
 </style>
