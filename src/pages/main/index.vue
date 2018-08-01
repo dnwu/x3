@@ -34,6 +34,7 @@ export default {
   display: flex;
   aside {
     width: 256px;
+    min-width: 256px;
     height: 100%;
     background-color: #3a3f44;
     overflow: auto;
@@ -49,6 +50,7 @@ export default {
     main {
       flex: 1;
       background-color: #F0F2F5;
+      padding: 20px;
     }
   }
 }

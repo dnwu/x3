@@ -4,7 +4,7 @@
             TERMINUS
         </div>
         <el-menu 
-            default-active="1-4-1" 
+            :default-active= "defaultActive" 
             class="el-menu-vertical-demo" 
             @open="handleOpen" 
             @close="handleClose" 
@@ -30,11 +30,13 @@ export default {
   data() {
     return {
       key: "value",
-      NavMenuData: []
+      NavMenuData: [],
+      defaultActive: '/internet/activation'
     };
   },
   mounted() {
-      console.log(NavMenuData);
+    //   console.log(this.$route.path);
+      this.defaultActive = this.$route.path
       this.NavMenuData = NavMenuData
   },
   methods: {

@@ -12,6 +12,11 @@ import {
   Submenu,
   MenuItem,
   MenuItemGroup,
+  Breadcrumb,
+  BreadcrumbItem,
+  Input,
+  Form,
+  FormItem,
 } from 'element-ui';
 
 Vue.prototype.axios = axios
@@ -21,6 +26,11 @@ Vue.use(Menu)
 Vue.use(Submenu)
 Vue.use(MenuItem)
 Vue.use(MenuItemGroup)
+Vue.use(Breadcrumb)
+Vue.use(BreadcrumbItem)
+Vue.use(Input)
+Vue.use(Form)
+Vue.use(FormItem)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
