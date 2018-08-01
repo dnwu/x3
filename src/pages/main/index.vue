@@ -31,8 +31,11 @@ export default {
 .main {
   width: 100%;
   height: 100%;
-  display: flex;
+  // display: flex;
   aside {
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 256px;
     min-width: 256px;
     height: 100%;
@@ -40,7 +43,9 @@ export default {
     overflow: auto;
   }
   > div {
-    flex: 1;
+    // flex: 1;
+    height: 100%;
+    padding-left: 256px;
     display: flex;
     flex-direction: column;
     header {

@@ -17,9 +17,19 @@ import {
   Input,
   Form,
   FormItem,
+  Table,
+  TableColumn,
+  Pagination,
+  Dialog,
+  MessageBox,
+  Radio,
+  RadioGroup,
+  Select,
+  Option,
 } from 'element-ui';
 
 Vue.prototype.axios = axios
+Vue.prototype.$confirm = MessageBox
 Vue.config.productionTip = false
 Vue.use(Button)
 Vue.use(Menu)
@@ -31,6 +41,17 @@ Vue.use(BreadcrumbItem)
 Vue.use(Input)
 Vue.use(Form)
 Vue.use(FormItem)
+Vue.use(Table)
+Vue.use(TableColumn)
+Vue.use(Pagination)
+Vue.use(Dialog)
+Vue.use(Radio)
+Vue.use(RadioGroup)
+Vue.use(Select)
+Vue.use(Option)
+// Vue.use(MessageBox)
+// Vue.use(Message)
+// Vue.use(Notification)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
