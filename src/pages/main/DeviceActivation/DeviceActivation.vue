@@ -46,7 +46,7 @@ export default {
     submitForm(formName) {
       this.$refs[formName].validate(valid => {
         if (valid) {
-            this.licenseControl = true
+          this.licenseControl = true;
           alert("submit!");
         } else {
           console.log("error submit!!");
@@ -84,11 +84,13 @@ export default {
 </style>
 <style lang='less'>
 // 激活button 居中
-.button {
-  .el-form-item__content {
-    text-align: center;
-    button {
-      padding: 7px 88px;
+.device-activation {
+  .button {
+    .el-form-item__content {
+      text-align: center;
+      button {
+        padding: 7px 88px;
+      }
     }
   }
 }
