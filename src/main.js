@@ -26,6 +26,7 @@ import {
   RadioGroup,
   Select,
   Option,
+  Tree,
 } from 'element-ui';
 
 Vue.prototype.axios = axios
@@ -49,6 +50,7 @@ Vue.use(Radio)
 Vue.use(RadioGroup)
 Vue.use(Select)
 Vue.use(Option)
+Vue.use(Tree)
 // Vue.use(MessageBox)
 // Vue.use(Message)
 // Vue.use(Notification)

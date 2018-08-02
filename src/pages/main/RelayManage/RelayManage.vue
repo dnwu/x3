@@ -35,7 +35,7 @@
                     <div class="body">
                         <div class="icon el-icon-warning"></div>
                         <p>删除警告</p>
-                        <p>是否删除该摄像头设备?</p>
+                        <p>是否删除该该网络继电器?</p>
                         <p></p>
                     </div>
                     <span slot="footer" class="dialog-footer">
