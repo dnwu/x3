@@ -404,6 +404,11 @@ export default {
       font-size: 12px;
       background-color: #fafafa;
     }
+    .el-table__fixed-right{
+      .el-table__fixed-header-wrapper{
+        font-size: 12px;
+      }
+    }
     .el-table__body {
       font-size: 12px;
     }
