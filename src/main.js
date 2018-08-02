@@ -27,6 +27,8 @@ import {
   Select,
   Option,
   Tree,
+  Checkbox,
+  CheckboxGroup,
 } from 'element-ui';
 
 Vue.prototype.axios = axios
@@ -51,6 +53,8 @@ Vue.use(RadioGroup)
 Vue.use(Select)
 Vue.use(Option)
 Vue.use(Tree)
+Vue.use(Checkbox)
+Vue.use(CheckboxGroup)
 // Vue.use(MessageBox)
 // Vue.use(Message)
 // Vue.use(Notification)

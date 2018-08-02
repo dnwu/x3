@@ -147,10 +147,10 @@ export default {
       this.deleteBox = true;
     },
     addPositionSubmit() {
-        console.log(this.$refs.addPositionTree.getCheckedNodes());
+      console.log(this.$refs.addPositionTree.getCheckedNodes());
     },
     getCheckedNodesArr(arr) {
-        console.log(arr);
+      console.log(arr);
     }
   }
 };
@@ -248,6 +248,17 @@ export default {
           font-size: 12px;
           color: #666666;
         }
+      }
+    }
+  }
+  .add-dialog {
+    .el-dialog__header {
+      text-align: left;
+      color: #333333;
+      padding: 10px;
+      background-color: #fafafa;
+      .el-dialog__title {
+        font-size: 14px;
       }
     }
   }

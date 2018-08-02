@@ -480,6 +480,7 @@ export default {
       text-align: left;
       color: #333333;
       padding: 10px;
+      background-color: #FAFAFA;
       .el-dialog__title {
         font-size: 14px;
       }
