@@ -31,6 +31,7 @@ import {
   CheckboxGroup,
   Upload,
   Loading,
+  DatePicker,
 } from 'element-ui';
 
 Vue.prototype.axios = axios
@@ -59,6 +60,7 @@ Vue.use(Checkbox)
 Vue.use(CheckboxGroup)
 Vue.use(Upload)
 Vue.use(Loading)
+Vue.use(DatePicker)
 // Vue.use(MessageBox)
 // Vue.use(Message)
 // Vue.use(Notification)
