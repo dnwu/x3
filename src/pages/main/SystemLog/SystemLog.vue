@@ -47,21 +47,30 @@
                 <div class="direction">方向</div>
                 <div class="contrast">照片(抓拍照片vs比对库照片)</div>
             </div>
-            <div class="body layout" v-for="(item,index) in new Array(6)" :key="index">
-                <div class="operate-data">2017-09-21 12:32</div>
-                <div class="face-db">通行库</div>
-                <div class="way-info">万科小区围墙机</div>
-                <div class="record">开门</div>
-                <div class="direction">进</div>
-                <div class="contrast">
-                    <div>
-                        <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1176987195,174235917&fm=27&gp=0.jpg" alt="">
-                    </div>
-                    <div>80%</div>
-                    <div>
-                        <img src="http://pic.baike.soso.com/p/20140728/20140728113802-1762160793.jpg" alt="">
+            <div class="body">
+                <div class="layout list"  v-for="(item,index) in new Array(6)" :key="index">
+                    <div class="operate-data">2017-09-21 12:32</div>
+                    <div class="face-db">通行库</div>
+                    <div class="way-info">万科小区围墙机</div>
+                    <div class="record">开门</div>
+                    <div class="direction">进</div>
+                    <div class="contrast">
+                        <div>
+                            <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1176987195,174235917&fm=27&gp=0.jpg" alt="">
+                        </div>
+                        <div>80%</div>
+                        <div>
+                            <img src="http://pic.baike.soso.com/p/20140728/20140728113802-1762160793.jpg" alt="">
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="page">
+                <el-pagination
+                    background
+                    layout="prev, pager, next"
+                    :total="1000">
+                </el-pagination>
             </div>
         </div>
     </div>
@@ -129,6 +138,9 @@ export default {
     align-items: center;
   }
   .contain {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     padding-left: 20px;
     .search {
       margin-top: 10px;
@@ -148,69 +160,77 @@ export default {
           }
         }
       }
-      .btn{
-          flex: 1;
-          margin-left: 30px;
+      .btn {
+        flex: 1;
+        margin-left: 30px;
       }
     }
-    .layout{
-        display: flex;
-        text-align: center;
-        .operate-data{
-            flex: 1;
-            // width: 200px;
-        }
-        .face-db{
-            flex: 1;
-            // width: 100px;
-        }
-        .way-info{
-            flex: 1;
-            // width: 200px;
-        }
-        .record{
-            flex: 1;
-            // width: 80px;
-        }
-        .direction{
-            flex: 1;
-            // width: 40px;
-        }
-        .contrast{
-            flex: 2;
-        }
+    .layout {
+      display: flex;
+      text-align: center;
+      .operate-data {
+        flex: 1;
+        // width: 200px;
+      }
+      .face-db {
+        flex: 1;
+        // width: 100px;
+      }
+      .way-info {
+        flex: 1;
+        // width: 200px;
+      }
+      .record {
+        flex: 1;
+        // width: 80px;
+      }
+      .direction {
+        flex: 1;
+        // width: 40px;
+      }
+      .contrast {
+        flex: 2;
+      }
     }
-    .title{
-        margin-top: 20px;
-        height: 40px;
-        line-height: 40px;
-        font-size: 12px;
-        font-weight: 700;
-        border-bottom: 1px solid #e8e8e8;
-        background-color: #FAFAFA;
+    .title {
+      margin-top: 20px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 12px;
+      font-weight: 700;
+      border-bottom: 1px solid #e8e8e8;
+      background-color: #fafafa;
     }
     .body{
-        font-size: 14px;
-        color: #666666;
-        height: 70px;
-        line-height: 70px;
-        &:hover{
-            background-color: #E6F7FF;
-        }
-        .contrast{
+        flex: 1;
+        .list {
+          font-size: 14px;
+          color: #666666;
+          height: 70px;
+          line-height: 70px;
+          &:hover {
+            background-color: #e6f7ff;
+          }
+          .contrast {
             display: flex;
             justify-content: center;
             align-items: center;
-            >div{
-                color: #666666;
-                img{
-                    width: 50px;
-                    height: 60px;
-                    vertical-align: middle;
-                    margin: 0 10px;
-                }
+            > div {
+              color: #666666;
+              img {
+                width: 50px;
+                height: 60px;
+                vertical-align: middle;
+                margin: 0 10px;
+              }
             }
+          }
         }
+    }
+    .page {
+      text-align: center;
+      height: 34px;
+      margin-bottom: 20px;
     }
   }
 }
