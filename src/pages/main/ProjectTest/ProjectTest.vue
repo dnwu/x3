@@ -196,8 +196,6 @@ export default {
           }
         }
       }
-      .upload {
-      }
       .btn {
         text-align: center;
         margin-top: 20px;
