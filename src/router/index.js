@@ -29,7 +29,7 @@ export default new Router({
       path: '/',
       name: 'HelloWorld',
       component: Main,
-      redirect: '/internet/activation',
+      redirect: '/login',
       children: [
         {
           path: '/internet/activation',
