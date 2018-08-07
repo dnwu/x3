@@ -93,12 +93,14 @@ export default {
 }
 </style>
 <style lang="less">
-.el-form {
-  .el-form-item__content {
-    margin-left: 0 !important;
-  }
-  .el-button {
-    padding: 9px 126px;
-  }
+.login{
+    .el-form {
+      .el-form-item__content {
+        margin-left: 0 !important;
+      }
+      .el-button {
+        padding: 9px 126px;
+      }
+    }
 }
 </style>

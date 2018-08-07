@@ -179,32 +179,32 @@
                     <el-table-column
                         prop="index"
                         label="序号"
-                        width="46">
+                        width="60">
                     </el-table-column>
                     <el-table-column
                         prop="name"
                         label="摄像头名称"
-                        width="100">
+                        width="140">
                     </el-table-column>
                     <el-table-column
                         prop="maker"
                         label="摄像头厂商"
-                        width="120">                                     
+                        width="180">                                     
                     </el-table-column>
                     <el-table-column
                         prop="id"
                         label="摄像头序列号"
-                        width="120">
+                        width="180">
                     </el-table-column>
                     <el-table-column
                         prop="ip"
                         label="摄像头ip"
-                        width="130">
+                        width="160">
                     </el-table-column>
                     <el-table-column
                         prop="port"
                         label="端口号"
-                        width="70">
+                        width="100">
                     </el-table-column>
                     <el-table-column
                         prop="protocol"
@@ -232,7 +232,7 @@
                     <el-table-column
                         fixed="right"
                         label="操作"
-                        width="100">
+                        width="160">
                         <template slot-scope="scope">
                             <el-button @click="resetCarmera(scope.row)" type="text" size="small">修改</el-button>
                             <el-button @click="deleteItem(scope.row)" type="text" style="color:#F5222D" size="small">删除</el-button>
@@ -400,12 +400,15 @@ export default {
 // 设置表格样式
 .camera-manage {
   .table {
+    th {
+      text-align: center;
+    }
     .el-table__header-wrapper {
       font-size: 12px;
       background-color: #fafafa;
     }
-    .el-table__fixed-right{
-      .el-table__fixed-header-wrapper{
+    .el-table__fixed-right {
+      .el-table__fixed-header-wrapper {
         font-size: 12px;
       }
     }

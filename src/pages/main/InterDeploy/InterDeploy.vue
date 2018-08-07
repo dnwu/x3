@@ -190,8 +190,17 @@ export default {
             }
           }
         }
+        .left {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-end;
+          .tit{
+              margin-right: 150px;
+          }
+        }
         .right {
-        .remark {
+          .remark {
             font-size: 12px;
             width: 230px;
             height: 106px;
@@ -200,12 +209,12 @@ export default {
             background-color: #fffbe6;
             border: 1px solid #ffe58f;
             margin: 80px auto 0;
-        }
+          }
         }
       }
-      .submit{
-          text-align: center;
-          padding-top: 40px;
+      .submit {
+        text-align: center;
+        padding-top: 40px;
       }
     }
   }
@@ -222,10 +231,11 @@ export default {
       }
     }
     // 激活button尺寸
-    .el-button{
-        button{
-            width: 200px;
-        }
+    .el-button {
+      padding: 7px 40px;
+      button {
+        width: 200px;
+      }
     }
   }
 }

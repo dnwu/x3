@@ -211,33 +211,33 @@
                   <el-table-column
                       prop="name"
                       label="网络继电器名称"
-                      width="180">
+                      width="200">
                   </el-table-column>
                   <el-table-column
                       prop="maker"
                       label="网络继电器型号"
-                      width="180">                                     
+                      width="200">                                     
                   </el-table-column>
                   <el-table-column
                       prop="id"
                       label="网络继电器序列号"
-                      width="180">
+                      width="200">
                   </el-table-column>
                   <el-table-column
                       prop="ip"
                       label="继电器IP"
-                      width="170">
+                      width="200">
                   </el-table-column>
                   <el-table-column
                       prop="port"
                       label="继电器通道"
-                      width="120">
+                      width="160">
                   </el-table-column>
                   
                   <el-table-column
                       fixed="right"
                       label="连接测试"
-                      width="80">
+                      width="100">
                       <template slot-scope="scope">
                           <el-button @click="test(scope.row)" type="text" size="small">测试</el-button>
                       </template>
@@ -245,7 +245,7 @@
                   <el-table-column
                       fixed="right"
                       label="状态"
-                      width="80">
+                      width="100">
                       <template slot-scope="scope">
                           <el-button type="text" size="small">正常</el-button>
                       </template>
@@ -423,6 +423,9 @@ export default {
 <style lang="less">
 .relay-manage {
   .table {
+    th {
+      text-align: center;
+    }
     .el-table__header-wrapper {
       font-size: 12px;
       background-color: #fafafa;
